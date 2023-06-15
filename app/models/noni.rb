@@ -1,0 +1,2 @@
+class Noni < ApplicationRecord
+end
