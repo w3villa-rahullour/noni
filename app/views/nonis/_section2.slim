@@ -1,39 +1,54 @@
-.section2
-  p.heading VÁSÁRLÁS
-  .vertical-sections
-    .section
-      img[src="assets/sec2-img1.svg"]
-      .prod-name.prod-name-first-section
-        p DOGS LOVE NONI 2db
-        p glükozaminnal, kondroitin-szulfáttal és vitaminokkal
-      hr.separator
-      .prod-info
-        p DKiszerelés: span 2x 750 mL/doboz
-        p támogatás összege: span XXX ft
-      p.area Ár: XXX Ft
-      .buy-btn
-        button KOSÁRBA
-    .section
-      img[src="assets/sec2-img2.svg"]
-      .prod-name
-        p DOGS LOVE NONI 4db
-        p glükozaminnal, kondroitin-szulfáttal és vitaminokkal
-      hr.separator
-      .prod-info
-        p DKiszerelés: span 2x 750 mL/doboz
-        p támogatás összege: span XXX ft
-      p.area Ár: XXX Ft
-      .buy-btn
-        button KOSÁRBA
-    .section
-      img[src="assets/sec2-img3.svg"]
-      .prod-name
-        p MAGICAL LOVE NONI 2db
-        p vörös szőlővel és kék áfonyával
-      hr.separator.sep2
-      .prod-info
-        p DKiszerelés: span 2x 750 mL/doboz
-        p támogatás összege: span XXX ft
-      p.area Ár: XXX Ft
-      .buy-btn2
-        button KOSÁRBA
+section.vasarlas
+  .wrapper-noni
+    .common-heading.text-center
+      | VÁSÁRLÁS
+
+
+
+    .vasarlas_child
+      .vasarlas__inner
+        .vasarlas_img_inner
+          img[src="assets/sec2-img1.svg"]
+        
+        .vasarlas__text 
+          .prod-name
+            p DOGS LOVE NONI 2db
+            p glükozaminnal, kondroitin-<br> szulfáttal és vitaminokkal 
+          .prod-info
+            p DKiszerelés: <b> 2x 750 mL/doboz</b>
+            p támogatás összege: <span class="theme-text-red"> XXX ft</span>
+          .mtb-20.text-center.font-26
+            | XXX Ft
+          .text-center
+            button.btn-theme-primary KOSÁRBA
+      
+      .vasarlas__inner
+        .vasarlas_img_inner
+          img[src="assets/sec2-img2.png"]
+        .vasarlas__text 
+          .prod-name
+            p DOGS LOVE NONI 4db
+            p glükozaminnal, kondroitin-<br> szulfáttal és vitaminokkal 
+          .prod-info
+            p DKiszerelés: <b> 2x 750 mL/doboz</b>
+            p támogatás összege: <span class="theme-text-red"> XXX ft</span>
+          .mtb-20.text-center.font-26
+            | XXX Ft
+          .text-center
+            button.btn-theme-primary KOSÁRBA
+      
+
+      .vasarlas__inner
+        .vasarlas_img_inner
+          img[src="assets/sec2-img3.png"]
+        .vasarlas__text 
+          .prod-name.line-blue
+            p MAGICAL LOVE NONI 2db
+            p vörös szőlővel és<br> kék áfonyával 
+          .prod-info
+            p DKiszerelés: <b> 2x 750 mL/doboz</b>
+            p támogatás összege: <span class="theme-text-blue"> XXX ft</span>
+          .mtb-20.text-center.font-26
+            | XXX Ft
+          .text-center
+            button.btn-theme-secondary KOSÁRBA
