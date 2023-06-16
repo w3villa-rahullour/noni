@@ -101,6 +101,22 @@ $background-color_3: #2196F3;
   justify-content: space-between;
 }
 
+.input-style{
+  input{
+    background-color: transparent;
+    border: unset;
+    background-color: rgba(0,0,0,0.06);
+    color: white;
+    padding: 2px 5px;
+    &:focus{
+      border: unset;
+      outline: unset;
+    }
+    &::placeholder{
+      color: #ccc;
+    }
+  }
+}
 .theme-bg{
   background-color: $theme-color;
 }
