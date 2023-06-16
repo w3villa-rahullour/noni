@@ -14,6 +14,93 @@ $theme-red: #F14E00;
 $theme-blue: #0074C9;
 
 
+
+
+// Custom checkboxes
+
+
+$background-color_1: #eee;
+$background-color_2: #ccc;
+$background-color_3: #2196F3;
+
+.checkbox-parent {
+  display: block;
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 13px;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked {
+      ~ {
+        .checkmark {
+          // background-color: $background-color_3;
+          background-color: transparent;
+          border: 1px solid white;
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    input {
+      ~ {
+        .checkmark {
+          background-color: rgba(0,0,0,0.1);
+        }
+      }
+    }
+  }
+  .checkmark {
+    &:after {
+      left: 4px;
+      top: 4px;
+      width: 8px;
+      height: 8px;
+      // border: solid white;
+      border-radius: 30px;
+      background: black;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: transparent;
+  border: 1px solid white;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+// Custom checkboxes end
+
+.check-set{
+  display: flex;
+  justify-content: space-between;
+}
+
 .theme-bg{
   background-color: $theme-color;
 }
@@ -145,7 +232,7 @@ $theme-blue: #0074C9;
     width: 1200px;
     right: 0;
     top: 0;
-    height: 867px;
+    height: 842px;
     img{
       height: 100%;
       width: 100%;
@@ -190,6 +277,13 @@ $theme-blue: #0074C9;
 
 
 @media screen and (max-width: 1600px){
+  .vasarlas{ 
+    .vasarlas_child{
+     .vasarlas__inner{
+        margin-top: 10px !important;
+     }
+   }
+ }
   .wrapper-noni{
     width: calc(100% - 100px);
   }
@@ -456,9 +550,15 @@ $theme-blue: #0074C9;
         // margin-top: 32px;
       }
       .list-with-checkbox{
+
         margin-top: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 10px;
         p{
           color: white;
+          margin-bottom: 0;
         }
       }
     }
@@ -525,7 +625,7 @@ $theme-blue: #0074C9;
       }
     }
     .gold-btn{
-      margin-top: 60px !important;
+      margin-top: 90px !important;
     }
   }
 }
@@ -731,7 +831,7 @@ $theme-blue: #0074C9;
 
 
 
-@media screen and (max-width: 1999px){
+@media screen and (max-width: 1600px){
   .befolyt{ 
     .section5{ 
       .top-section{ 

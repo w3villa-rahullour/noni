@@ -56,8 +56,14 @@ section.rendeles
               | megjegyzés:
           .list-with-checkbox
             p számlázási adatok megegyeznek a szállítási adatokkal
+            label.checkbox-parent
+              input type="checkbox" 
+              span.checkmark
           .list-with-checkbox
             p A kiszállítást a Kutyasegély szolgálat részére kérem!
+            label.checkbox-parent
+              input type="checkbox" checked=""
+              span.checkmark
       .middle-table.d-set
         / .vertical-separator.vertical-separator2
         .column-1
@@ -85,7 +91,15 @@ section.rendeles
             .sub-heading
               | FIZETÉSI MÓD:
             br
-            p Utánvét (+460 Ft)
-            p bankkártya
+            .check-set
+              p Utánvét (+460 Ft)
+              label.checkbox-parent
+                input type="checkbox" 
+                span.checkmark
+            .check-set  
+              p bankkártya
+              label.checkbox-parent
+                input type="checkbox" checked=""
+                span.checkmark
             .gold-btn
               button MEGRENDELEM
