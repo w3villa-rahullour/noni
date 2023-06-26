@@ -23,6 +23,10 @@ $background-color_1: #eee;
 $background-color_2: #ccc;
 $background-color_3: #2196F3;
 
+.theme-text-white{
+  color: $white;
+}
+
 .checkbox-parent {
   display: block;
   position: relative;
@@ -131,6 +135,12 @@ $background-color_3: #2196F3;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.font-14{
+  font-size: 14px;
+}
+.font-16{
+  font-size: 16px;
+}
 .font-20{
   font-size: 20px;
 }
@@ -140,7 +150,9 @@ $background-color_3: #2196F3;
 .font-26{
   font-size: 26px;
 }
-
+.mh-70{
+  min-height: 70px;
+}
 .text-up{
   text-transform: uppercase;
 }
@@ -169,16 +181,7 @@ $background-color_3: #2196F3;
     cursor: pointer;
   }
 }
-// Nonis Custom CSS
-@media screen and (min-width: 1999px){
-  .wrapper-noni{
-    // width: 1920px !important;
-    // margin: auto;
-  }
-  .base-right-banner{
-    // margin-right: calc(24% - 181px);
-  }
-}
+
 
 .wrapper-noni{
   width: calc(100% - 192px);
@@ -256,89 +259,6 @@ $background-color_3: #2196F3;
   }
 }
 
-@media screen and (max-width: 1900px){
-  .hero{
-    .logo-h{
-      img{
-        width: 120px;
-      }
-      .web-title{
-        font-size: 70px;
-        line-height: 66px;
-        top: -4px;
-      }
-    }
-    .left-area{ 
-      .sub-head{
-        font-size: 22px;
-      }
-      .head-para{
-        p{
-          font-size: 14px;
-        }
-      }
-    }
-    .bottom-image{ 
-      img{
-        width: 120px;
-        margin-right: 10px;
-      }
-    }
-    .base-right-banner{
-      width: 980px;
-      height: 642px;
-    }
-  }
-}
-
-
-@media screen and (max-width: 1600px){
-  .vasarlas{ 
-    .vasarlas_child{
-     .vasarlas__inner{
-        margin-top: 10px !important;
-     }
-   }
- }
-  .wrapper-noni{
-    width: calc(100% - 100px);
-  }
-  .hero{
-    .logo-h{
-      img{
-        width: 100px;
-      }
-      .web-title{
-      font-size: 58px;
-      line-height: 53px;
-      top: -3px;
-      margin-left: 20px;
-      }
-    }
-    .left-area{ 
-      width: 350px;
-      .sub-head{
-        font-size: 22px;
-      }
-      .head-para{
-        p{
-          font-size: 14px;
-        }
-      }
-    }
-    .bottom-image{ 
-      margin-top: 20px;
-      img{
-        width: 80px;
-        margin-right: 10px;
-      }
-    }
-    .base-right-banner{
-      width: 944px;
-      height: 618px;
-    }
-  }
-}
 
 
 // VÁSÁRLÁS Section
@@ -347,6 +267,17 @@ $background-color_3: #2196F3;
   background-color: #EFA356;
   padding-top: 60px;
   padding-bottom: 60px;
+  .head-title{
+    height: 106px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    img{
+
+    }
+  }
   .vasarlas_child{
     display: flex;
     justify-content: space-between;
@@ -416,35 +347,6 @@ $background-color_3: #2196F3;
   }
 }
 
-@media screen and (max-width: 1999px){
-  .common-heading{
-    font-size: 60px;
-  }
-  .sub-heading{
-    font-size: 24px;
-  }
-  .vasarlas{ 
-    .vasarlas_child{ 
-      .vasarlas__inner{ 
-        .vasarlas__text{ 
-          .prod-name{ 
-            p:first-child{
-              font-size: 20px;
-            }
-            p:last-child{
-              font-size: 16px;
-            }
-          }
-          .prod-info{ 
-            p{
-              font-size: 16px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
 .rendeles{
   background-color: $theme-red;
@@ -621,30 +523,7 @@ $background-color_3: #2196F3;
   }
 }
 
-@media screen and (max-width: 1999px){
-  .rendeles{ 
-    .order-details{ 
-      .left-table{ 
-        p{
-          font-size: 16px;
-        }
-      }
-      .right-table{
-        p{
-          font-size: 16px;
-        }
-      }
-    }
-    .column-1, .column-2, .column-3{
-      p{
-        font-size: 16px !important;
-      }
-    }
-    .gold-btn{
-      margin-top: 90px !important;
-    }
-  }
-}
+
 
 .teremekekrol{
   .section4{
@@ -847,6 +726,98 @@ $background-color_3: #2196F3;
 
 
 
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Common Mobile and Tablet Responsive
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media screen and (max-width: 1999px){
+  .common-heading{
+    font-size: 60px;
+  }
+  .sub-heading{
+    font-size: 24px;
+  }
+  .vasarlas{ 
+    .vasarlas_child{ 
+      .vasarlas__inner{ 
+        .vasarlas__text{ 
+          .prod-name{ 
+            p:first-child{
+              font-size: 20px;
+            }
+            p:last-child{
+              font-size: 16px;
+            }
+          }
+          .prod-info{ 
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rendeles{ 
+    .order-details{ 
+      .left-table{ 
+        p{
+          font-size: 16px;
+        }
+      }
+      .right-table{
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+    .column-1, .column-2, .column-3{
+      p{
+        font-size: 16px !important;
+      }
+    }
+    .gold-btn{
+      margin-top: 90px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1900px){
+  .hero{
+    .logo-h{
+      img{
+        width: 120px;
+      }
+      .web-title{
+        font-size: 70px;
+        line-height: 66px;
+        top: -4px;
+      }
+    }
+    .left-area{ 
+      .sub-head{
+        font-size: 22px;
+      }
+      .head-para{
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom-image{ 
+      img{
+        width: 120px;
+        margin-right: 10px;
+      }
+    }
+    .base-right-banner{
+      width: 980px;
+      height: 624px;
+    }
+  }
+}
+
 @media screen and (max-width: 1600px){
   .befolyt{ 
     .section5{ 
@@ -867,4 +838,58 @@ $background-color_3: #2196F3;
       }
     }
   }
+  .vasarlas{ 
+    .vasarlas_child{
+     .vasarlas__inner{
+        margin-top: 10px !important;
+     }
+    }
+  }
+  .wrapper-noni{
+    width: calc(100% - 100px);
+  }
+  .hero{
+    .logo-h{
+      img{
+        width: 100px;
+      }
+      .web-title{
+        font-size: 58px;
+        line-height: 53px;
+        top: -3px;
+        margin-left: 20px;
+      }
+    }
+    .left-area{ 
+      width: 350px;
+      .sub-head{
+        font-size: 22px;
+      }
+      .head-para{
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+    .bottom-image{ 
+      margin-top: 20px;
+      img{
+        width: 80px;
+        margin-right: 10px;
+      }
+    }
+    .base-right-banner{
+      width: 944px;
+      height: 598px;
+    }
+  }
 }
+
+
+@media screena and (max-width: 1350px){
+
+}
+
+
+
+
