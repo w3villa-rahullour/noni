@@ -5,7 +5,7 @@ section.vasarlas
 
 
 
-    .vasarlas_child
+    .vasarlas_child.on-desktop-content
       .vasarlas__inner
         .head-title
           img[src="assets/bubble.png"]
@@ -63,3 +63,81 @@ section.vasarlas
             | + kiszállítási díj, mely a <br/> kosár tartalmához kerül <br/> hozzáadásra (2.200 Ft)
           .text-center
             button.btn-theme-secondary KOSÁRBA
+
+
+    .on-mobile-content
+      #carouselExampleControls.carousel.slide[data-ride="carousel" data-interval="100000"]
+        .carousel-inner.vasarlas_child
+          .carousel-item.active
+            .vasarlas__inner
+              .head-title
+                img[src="assets/bubble.png"]
+              .vasarlas_img_inner
+                img[src="assets/sec2-img1.svg"]
+              .vasarlas__text 
+                .prod-name
+                  p DOGS LOVE NONI 2db
+                  p glükozaminnal, kondroitin-<br> szulfáttal és vitaminokkal 
+                .prod-info
+                  p Kiszerelés: <b> 2x 750 mL/doboz</b>
+                  p támogatás összege: <div class="font-26 theme-text-red"><b>4.000 ft</b></div>
+                .mtb-20.text-center.font-26 
+                  | Ár: 29.900 Ft
+                p.font-14.theme-text-white.text-center.mh-70.mh-auto-sm
+                  | + kiszállítási díj, mely a <br/>  kosár tartalmához kerül <br/> hozzáadásra (2.100 Ft)
+                .text-center
+                  button.btn-theme-primary KOSÁRBA
+          .carousel-item
+            .vasarlas__inner
+              .head-title
+                img[src="assets/bubble.png"]
+              .vasarlas_img_inner
+                img[src="assets/sec2-img2.png"]
+              .vasarlas__text 
+                .prod-name
+                  p DOGS LOVE NONI 4db
+                  p glükozaminnal, kondroitin-<br> szulfáttal és vitaminokkal 
+                .prod-info
+                  p Kiszerelés: <b> 4x 750 mL/doboz</b>
+                  p támogatás összege: <div class="font-26 theme-text-red"><b>8.000 ft</b></div>
+                .mtb-20.text-center.font-26
+                  | Ár: 57.900 Ft
+                p.font-14.theme-text-white.text-center.mh-70.mh-auto-sm
+                  | Ingyenes kiszállítás!
+                .text-center
+                  button.btn-theme-primary KOSÁRBA
+          .carousel-item
+            .vasarlas__inner
+              .head-title
+                img[src="assets/bubble-2.png"]
+              .vasarlas_img_inner
+                img[src="assets/sec2-img3.png"]
+              .vasarlas__text 
+                .prod-name.line-blue
+                  p MAGICAL LOVE NONI 2db
+                  p vörös szőlővel és<br> kék áfonyával 
+                .prod-info
+                  p Kiszerelés: <b> 4x 750 mL/doboz</b>
+                  p támogatás összege: <div class="font-26 theme-text-blue"><b>7.200 ft</b></div>
+                .mtb-20.text-center.font-26
+                  | Ár: 52.800 Ft
+                p.font-14.theme-text-white.text-center.mh-70.mh-auto-sm
+                  | + kiszállítási díj, mely a <br/> kosár tartalmához kerül <br/> hozzáadásra (2.200 Ft)
+                .text-center
+                  button.btn-theme-secondary KOSÁRBA
+
+        
+
+
+
+
+
+
+        button.carousel-control-prev[type="button" data-target="#carouselExampleControls" data-slide="prev"]
+          span.carousel-control-prev-icon[aria-hidden="true"]
+          span.sr-only
+            | Previous
+        button.carousel-control-next[type="button" data-target="#carouselExampleControls" data-slide="next"]
+          span.carousel-control-next-icon[aria-hidden="true"]
+          span.sr-only
+            | Next
