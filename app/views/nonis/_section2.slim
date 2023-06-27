@@ -67,6 +67,10 @@ section.vasarlas
 
     .on-mobile-content
       #carouselExampleControls.carousel.slide[data-ride="carousel" data-interval="100000"]
+        ol.carousel-indicators
+          li.active[data-target="#carouselExampleControls" data-slide-to="0"]
+          li[data-target="#carouselExampleControls" data-slide-to="1"]
+          li[data-target="#carouselExampleControls" data-slide-to="2"]
         .carousel-inner.vasarlas_child
           .carousel-item.active
             .vasarlas__inner
@@ -126,18 +130,18 @@ section.vasarlas
                 .text-center
                   button.btn-theme-secondary KOSÁRBA
 
-        
-
-
-
-
 
 
         button.carousel-control-prev[type="button" data-target="#carouselExampleControls" data-slide="prev"]
-          span.carousel-control-prev-icon[aria-hidden="true"]
-          span.sr-only
-            | Previous
+          img[src="assets/carousel-left-indicator.svg" alt="Previous"]
+        span.sr-only | Previous
+
         button.carousel-control-next[type="button" data-target="#carouselExampleControls" data-slide="next"]
-          span.carousel-control-next-icon[aria-hidden="true"]
-          span.sr-only
-            | Next
+          img[src="assets/carousel-right-indicator.svg" alt="Next"]
+        span.sr-only | Next
+
+
+
+
+
+

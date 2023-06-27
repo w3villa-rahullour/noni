@@ -898,7 +898,7 @@ $background-color_3: #2196F3;
 
 @media screen and (max-width: 1350px){
   .wrapper-noni{
-    width: calc(100% - 70px);
+    width: calc(100% - 40px);
   } 
   .common-heading{
     font-size: 38px;
@@ -926,6 +926,9 @@ $background-color_3: #2196F3;
     }
     .bottom-image{ 
       margin-top: 20px;
+      justify-content: space-between;
+      display: inline-flex;
+      gap: 26px;
       img{
         width: 50px;
         margin-right: 10px;
@@ -1207,14 +1210,14 @@ $background-color_3: #2196F3;
           width: auto;
           position: absolute;
           left: 0;
-          bottom: 20px;
+          bottom: 150px;
           height: auto;
         }
         .right-in{
           width: auto;
           position: absolute;
           right: 0;
-          bottom: 370px;
+          bottom: 415px;
           height: auto;
         }
       }
@@ -1229,8 +1232,8 @@ $background-color_3: #2196F3;
     }
     .bottom-image{ 
       img{
-        width: 94px;
-        margin-right: 30px;
+        width: 95px;
+        margin-right: -7px;
       }
     }
   }
@@ -1263,6 +1266,26 @@ $background-color_3: #2196F3;
             object-fit: contain;
           }
         }
+      }
+    }
+    .carousel-indicators{
+      top: 2vh;
+      li {
+        background-color: transparent;
+        border: none;
+        opacity: 1;
+      }
+      li::before {
+        content: "";
+        display: block;
+        width: 11px; 
+        height: 11px; 
+        background-color: white;
+        border-radius: 50%;
+        margin: 5px;
+      }
+      .active::before {
+        background-color: black;
       }
     }
   }
