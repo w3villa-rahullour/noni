@@ -1266,6 +1266,7 @@ $background-color_3: #2196F3;
   }
   .vasarlas{ 
     .vasarlas_child{ 
+      display: inherit;
       .vasarlas__inner{ 
         .head-title{ 
           img{
@@ -1299,7 +1300,7 @@ $background-color_3: #2196F3;
   }
   .carousel-control-prev, .carousel-control-next{
     bottom: unset;
-    top: 30%;
+    top: 230px;
   }
 
 
